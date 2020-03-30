@@ -8,9 +8,14 @@ class NubankApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Nubank flutter',
+      color: Colors.purple,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.purple,
+        appBarTheme: AppBarTheme(
+          brightness: Brightness.dark,
+        ),
       ),
       home: Dashboard(),
     );
