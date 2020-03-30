@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nubankflutter/widgets/card_resume.dart';
+import 'package:nubankflutter/widgets/summary_list.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -27,17 +27,17 @@ class _DashboardState extends State<Dashboard> {
                       ),
                       Icon(
                         Icons.keyboard_arrow_down,
-                        color: Colors.white,
+                        color: Colors.white.withAlpha(150),
                       )
                     ],
                   ),
                 ],
               ),
             ),
-            CardResume(),
+            SummaryList(),
             Container(
-              height: 164,
-              padding: EdgeInsets.fromLTRB(0, 32, 0, 8),
+              height: 120,
+              padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
               child: ListView(
                 padding: EdgeInsets.only(left: 20),
                 scrollDirection: Axis.horizontal,
@@ -89,10 +89,10 @@ class FeatureItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(6),
+      padding: const EdgeInsets.all(4),
       child: Container(
-        width: 110,
-        height: 110,
+        width: 100,
+        height: 100,
         padding: EdgeInsets.all(8),
         decoration: BoxDecoration(
             color: Colors.white.withAlpha(40),
@@ -109,7 +109,7 @@ class FeatureItem extends StatelessWidget {
             Text(
               name,
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 16,
                 color: Colors.white,
               ),
             )
